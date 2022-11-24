@@ -29,17 +29,17 @@ class Car extends VehicleModule {
     start() {
         if (this.fuel > 0) {
             console.log("engine start");
-            return.this.started = true;
+            return this.started = true;
         } else {
             console.log("fuel empty");
-            return.this.started = false;
+            return this.started = false;
         }
     }
 
     serviceTime() {
         if (this.mileage > 3000) {
             this.scheduleService = true;
-            return.this.scheduleService;
+            return this.scheduleService;
         }
     }
 }
